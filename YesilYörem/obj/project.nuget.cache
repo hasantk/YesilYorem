@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oOPNRc573Ew9ZK6Uuutn5nSu37Vi1Rnl4OfM5bIxyocWbjUuHvXn1pJGF04mAz+VHjog7sK0RaKxtZV8kuKlhw==",
+  "dgSpecHash": "5Sg034knNm8QArcvCMq01VA5AXiepfAI/GxrrEaWH8H0aHbQroCn1FyGz9sHo6+7h7Ve1/AnGRe698DFd5O5FQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hsyna\\Desktop\\YesilYöremWeb\\YesilYörem\\YesilYörem\\YesilYörem.csproj",
+  "projectFilePath": "C:\\Users\\hsyna\\Desktop\\YesilYorem\\YesilYörem\\YesilYörem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hsyna\\.nuget\\packages\\bootstrap\\5.1.3\\bootstrap.5.1.3.nupkg.sha512",
     "C:\\Users\\hsyna\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

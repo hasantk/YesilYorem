@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sh15zTpzsXv6gs87PG+PgWHXsbBh92d4vNfJGgH33onV8gQdSvQacXfd9NYO2VgF8WWoQ+yVEbYxd+UhlclamA==",
+  "dgSpecHash": "usINQSB2FSLTxYocgYrWYGBBh27FPPPtrOzFWHEgZ/jRd6YC9r+MO1DvUbjA0fGnV/JCcCfyIbgCa/cX6PPlTQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hsyna\\Desktop\\YesilYöremWeb\\YesilYörem\\BusinessLayer\\BusinessLayer.csproj",
+  "projectFilePath": "C:\\Users\\hsyna\\Desktop\\YesilYorem\\BusinessLayer\\BusinessLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hsyna\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\hsyna\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

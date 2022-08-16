@@ -5804,11 +5804,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hsyna\\Desktop\\YesilYöremWeb\\YesilYörem\\EntityLayer\\EntityLayer.csproj",
+      "projectUniqueName": "C:\\Users\\hsyna\\Desktop\\YesilYorem\\EntityLayer\\EntityLayer.csproj",
       "projectName": "EntityLayer",
-      "projectPath": "C:\\Users\\hsyna\\Desktop\\YesilYöremWeb\\YesilYörem\\EntityLayer\\EntityLayer.csproj",
+      "projectPath": "C:\\Users\\hsyna\\Desktop\\YesilYorem\\EntityLayer\\EntityLayer.csproj",
       "packagesPath": "C:\\Users\\hsyna\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hsyna\\Desktop\\YesilYöremWeb\\YesilYörem\\EntityLayer\\obj\\",
+      "outputPath": "C:\\Users\\hsyna\\Desktop\\YesilYorem\\EntityLayer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

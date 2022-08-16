@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YB20s+ETHHKPERjP6BMYwgsw/L2KweFIemBZoN34+BmjZfvhqWcBm9gSZCsa2X2bOIzLJ7LlOJm4rQWw4+2eGA==",
+  "dgSpecHash": "qFmTI2+vqHDINqj1HnitG3NSc0mGyLjZF2CYNj2L5gVQiBDKLsbTrbx7FkJQKVEp3j2RzEXPdiNRcsYkW+f6Ow==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hsyna\\Desktop\\YesilYöremWeb\\YesilYörem\\DataAccessLayer\\DataAccessLayer.csproj",
+  "projectFilePath": "C:\\Users\\hsyna\\Desktop\\YesilYorem\\DataAccessLayer\\DataAccessLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hsyna\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\hsyna\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
