@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YeşilYörem</title>
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <nav class="navbar">
+      <img src="./assets/images/YeşilYöremLogo.png" width="180" height="150" />
+      <ul class="menu">
+        <li>Ürünler</li>
+        <li>Blog</li>
+        <li>Hakkımızda</li>
+        <li>İletişim</li>
+      </ul>
+      <ul class="menu_icons">
+        <li><i class="bi bi-person"></i></li>
+        <li><i class="bi bi-search"></i></li>
+        <li class="basket_icon"><i class="bi bi-cart"></i>
+           <span class="basket_count">2</span>
+        </li>
+      </ul>
+    </nav>
+    <section class="slider">
+      <div id="carouselMySite"
+       class="carousel slide" 
+       data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/images/zeytin.jpg" class="d-block w-100" alt="Bursa İznik">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/zeytin1.jpg" class="d-block w-100" alt="Dünyanın En İyi Zeytini">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/zeytin.jpg" class="d-block w-100" alt="Yerli Zeytin">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section class="store my-5">
+      <div class="filter_background"></div>
+      <ul class="filter">
+          <li class="active">Tümü</li>
+          <li>Sebze</li>
+          <li>Meyve</li>
+          <li>Zeytin</li>
+      </ul>
+      <div class="row">
+        <div class="col-5 offset-2 my-5">
+          <div class="row product_card">
+            <div class="col-6">
+              <img class="img-fluid shadow" src="./assets/images/zeytin2.jpg" width="258" height="400" />
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-between">
+              <div class="product_detail">
+                <span class="fos gray fs-5">Organik Zeytin Yağı</span><br/>
+                <span class="fs-4 fw-bold">İznik</span><br/>
+                <span class="product_star-rate">
+                  <i class="bi bi-star-fill active"></i>
+                  <i class="bi bi-star-fill active"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <span class="gray" >256 reviews</span>
+                  </span>
+              </div>
+              <p class="product_description fos gray">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Excepturi consectetur beatae hic, asperiores laborum id, odit, 
+                ad aperiam neque soluta debitis! Culpa repellendus,
+                quia assumenda rem voluptatibus sint vero maxime!
+              </p>
+              <div>
+                 <span class="black fw-bold fs-4 me-2">45₺</span>
+                 <span class="fs-4 fw-bold old_price" >65₺</span>
+              </div>
+              <button class="btn_style" >Sepete Ekle</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-5 my-5">
+          <div class="row product_card">
+            <div class="col-6">
+              <img class="img-fluid shadow" src="./assets/images/zeytin2.jpg" width="258" height="400" />
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-between">
+              <div class="product_detail">
+                <span class="fos gray fs-5">Organik Zeytin Yağı</span><br/>
+                <span class="fs-4 fw-bold">İznik</span><br/>
+                <span class="product_star-rate">
+                  <i class="bi bi-star-fill active"></i>
+                  <i class="bi bi-star-fill active"></i>
+                  <i class="bi bi-star-fill active"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <span class="gray" >256 reviews</span>
+                  </span>
+              </div>
+              <p class="product_description fos gray">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Excepturi consectetur beatae hic, asperiores laborum id, odit, 
+                ad aperiam neque soluta debitis! Culpa repellendus,
+                quia assumenda rem voluptatibus sint vero maxime!
+              </p>
+              <div>
+                 <span class="black fw-bold fs-4 me-2">45₺</span>
+                 <span class="fs-4 fw-bold old_price" >65₺</span>
+              </div>
+              <button class="btn_style" >Sepete Ekle</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-5 offset-2 my-5">
+          <div class="row product_card">
+            <div class="col-6">
+              <img class="img-fluid shadow" src="./assets/images/zeytin2.jpg" width="258" height="400" />
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-between">
+              <div class="product_detail">
+                <span class="fos gray fs-5">Organik Zeytin Yağı</span><br/>
+                <span class="fs-4 fw-bold">İznik</span><br/>
+                <span class="product_star-rate">
+                  <i class="bi bi-star-fill active"></i>
+                  <i class="bi bi-star-fill active"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <span class="gray" >256 reviews</span>
+                  </span>
+              </div>
+              <p class="product_description fos gray">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Excepturi consectetur beatae hic, asperiores laborum id, odit, 
+                ad aperiam neque soluta debitis! Culpa repellendus,
+                quia assumenda rem voluptatibus sint vero maxime!
+              </p>
+              <div>
+                 <span class="black fw-bold fs-4 me-2">45₺</span>
+                 <span class="fs-4 fw-bold old_price" >65₺</span>
+              </div>
+              <button class="btn_style" >Sepete Ekle</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-5 my-5">
+          <div class="row product_card">
+            <div class="col-6">
+              <img class="img-fluid shadow" src="./assets/images/zeytin2.jpg" width="258" height="400" />
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-between">
+              <div class="product_detail">
+                <span class="fos gray fs-5">Organik Zeytin Yağı</span><br/>
+                <span class="fs-4 fw-bold">İznik</span><br/>
+                <span class="product_star-rate">
+                  <i class="bi bi-star-fill active"></i>
+                  <i class="bi bi-star-fill active"></i>
+                  <i class="bi bi-star-fill active"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <span class="gray" >256 reviews</span>
+                  </span>
+              </div>
+              <p class="product_description fos gray">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Excepturi consectetur beatae hic, asperiores laborum id, odit, 
+                ad aperiam neque soluta debitis! Culpa repellendus,
+                quia assumenda rem voluptatibus sint vero maxime!
+              </p>
+              <div>
+                 <span class="black fw-bold fs-4 me-2">45₺</span>
+                 <span class="fs-4 fw-bold old_price" >65₺</span>
+              </div>
+              <button class="btn_style" >Sepete Ekle</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-5 offset-2 my-5">
+          <div class="row product_card">
+            <div class="col-6">
+              <img class="img-fluid shadow" src="./assets/images/zeytin2.jpg" width="258" height="400" />
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-between">
+              <div class="product_detail">
+                <span class="fos gray fs-5">Organik Zeytin Yağı</span><br/>
+                <span class="fs-4 fw-bold">İznik</span><br/>
+                <span class="product_star-rate">
+                  <i class="bi bi-star-fill active"></i>
+                  <i class="bi bi-star-fill active"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <span class="gray" >256 reviews</span>
+                  </span>
+              </div>
+              <p class="product_description fos gray">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Excepturi consectetur beatae hic, asperiores laborum id, odit, 
+                ad aperiam neque soluta debitis! Culpa repellendus,
+                quia assumenda rem voluptatibus sint vero maxime!
+              </p>
+              <div>
+                 <span class="black fw-bold fs-4 me-2">45₺</span>
+                 <span class="fs-4 fw-bold old_price" >65₺</span>
+              </div>
+              <button class="btn_style" >Sepete Ekle</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-5 my-5">
+          <div class="row product_card">
+            <div class="col-6">
+              <img class="img-fluid shadow" src="./assets/images/zeytin2.jpg" width="258" height="400" />
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-between">
+              <div class="product_detail">
+                <span class="fos gray fs-5">Organik Zeytin Yağı</span><br/>
+                <span class="fs-4 fw-bold">İznik</span><br/>
+                <span class="product_star-rate">
+                  <i class="bi bi-star-fill active"></i>
+                  <i class="bi bi-star-fill active"></i>
+                  <i class="bi bi-star-fill active"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <span class="gray" >256 reviews</span>
+                  </span>
+              </div>
+              <p class="product_description fos gray">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Excepturi consectetur beatae hic, asperiores laborum id, odit, 
+                ad aperiam neque soluta debitis! Culpa repellendus,
+                quia assumenda rem voluptatibus sint vero maxime!
+              </p>
+              <div>
+                 <span class="black fw-bold fs-4 me-2">45₺</span>
+                 <span class="fs-4 fw-bold old_price" >65₺</span>
+              </div>
+              <button class="btn_style" >Sepete Ekle</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-5 offset-2 my-5">
+          <div class="row product_card">
+            <div class="col-6">
+              <img class="img-fluid shadow" src="./assets/images/zeytin2.jpg" width="258" height="400" />
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-between">
+              <div class="product_detail">
+                <span class="fos gray fs-5">Organik Zeytin Yağı</span><br/>
+                <span class="fs-4 fw-bold">İznik</span><br/>
+                <span class="product_star-rate">
+                  <i class="bi bi-star-fill active"></i>
+                  <i class="bi bi-star-fill active"></i>
+                  <i class="bi bi-star-fill active"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <span class="gray" >256 reviews</span>
+                  </span>
+              </div>
+              <p class="product_description fos gray">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Excepturi consectetur beatae hic, asperiores laborum id, odit, 
+                ad aperiam neque soluta debitis! Culpa repellendus,
+                quia assumenda rem voluptatibus sint vero maxime!
+              </p>
+              <div>
+                 <span class="black fw-bold fs-4 me-2">45₺</span>
+                 <span class="fs-4 fw-bold old_price" >65₺</span>
+              </div>
+              <button class="btn_style" >Sepete Ekle</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-5 my-5">
+          <div class="row product_card">
+            <div class="col-6">
+              <img class="img-fluid shadow" src="./assets/images/zeytin2.jpg" width="258" height="400" />
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-between">
+              <div class="product_detail">
+                <span class="fos gray fs-5">Organik Zeytin Yağı</span><br/>
+                <span class="fs-4 fw-bold">İznik</span><br/>
+                <span class="product_star-rate">
+                  <i class="bi bi-star-fill active"></i>
+                  <i class="bi bi-star-fill active"></i>
+                  <i class="bi bi-star-fill active"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <span class="gray" >256 reviews</span>
+                  </span>
+              </div>
+              <p class="product_description fos gray">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Excepturi consectetur beatae hic, asperiores laborum id, odit, 
+                ad aperiam neque soluta debitis! Culpa repellendus,
+                quia assumenda rem voluptatibus sint vero maxime!
+              </p>
+              <div>
+                 <span class="black fw-bold fs-4 me-2">45₺</span>
+                 <span class="fs-4 fw-bold old_price" >65₺</span>
+              </div>
+              <button class="btn_style" >Sepete Ekle</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="basket_module">
+      <div class="basket_product">
+         <i class="bi bi-x"></i>
+         <h2>Sepetiniz</h2>
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>

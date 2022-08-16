@@ -1,0 +1,56 @@
+﻿@model EntityLayer.Concrete.Product
+@{
+    ViewData["Title"] = "AddProduct";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row mt-4">
+    <div class="col col-md-4">
+    </div>
+    <div class="col col-md-5">
+        <div class="card z-index-7 ">
+            <div class="card-header pb-0">
+                <h6>Ürün Ekleme sayfası</h6>
+            </div>
+            <div class="card-body p-3 " style="height:550px;">
+                <div class="chart">
+                    @using (Html.BeginForm("AddProduct", "Product", FormMethod.Post))
+                    {
+                        <div >
+                            @Html.Label("Ürün Adı")
+                            @Html.TextBoxFor(x=>x.ProductName,new {style="border:1px solid red",@class="form-control"})
+                        </div>
+                        <div>
+                            @Html.Label("Ürün resmi")
+                            @Html.TextBoxFor(x=>x.ImageUrl,new {style="border:1px solid red",@class="form-control"})
+                        </div>
+                        <div>
+                            @Html.Label("Kategori")
+                            @Html.DropDownListFor(x=>x.CategoryId,(List<SelectListItem>)ViewBag.cl,new {style="border:1px solid red",@class="form-control"})
+                        </div>
+                         <div>
+                            @Html.Label("Magza İsmi")
+                            @Html.DropDownListFor(x=>x.UserId,(List<SelectListItem>)ViewBag.ul,new {style="border:1px solid red",@class="form-control"})
+                        </div>
+                        <div>
+                            @Html.Label("Ürün Stok")
+                            @Html.TextBoxFor(x=>x.ProductStok,new {style="border:1px solid red",@class="form-control"})
+                        </div>
+                        <div>
+                            @Html.Label("Ürün Fiyatı")
+                            @Html.TextBoxFor(x=>x.Price,new {style="border:1px solid red",@class="form-control"})
+                        </div>
+                        <div>
+                            @Html.Label("Ürün Açıklaması")
+                            @Html.TextAreaFor(x=>x.ProductDescription,2,4,new {style="border:1px solid red",@class="form-control"})
+                        </div>
+                        <br />
+                        <button class="btn btn-info">Ürün Ekle</button>
+                    }
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
