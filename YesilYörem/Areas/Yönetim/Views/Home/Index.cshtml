@@ -1,0 +1,71 @@
+﻿@using EntityLayer.Concrete
+@using X.PagedList
+@using X.PagedList.Mvc.Core
+@model IPagedList<EntityLayer.Concrete.Product>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row mt-4">
+    <div class="col col-md-2">
+    </div>
+    <div class="col col-md-10">
+        <div class="card z-index-7">
+            <div class="card-header pb-1">
+                <h6>Ürün Listesi</h6>
+            </div>
+            <div class="card-body p-1">
+                <div class="chart">
+
+                    <div class="table table-bordered table-hover">
+                        <table style="width:925px; height:300px;">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Id</th>
+                                    <th>Ürün resmi</th>
+                                    <th>Ürün İsmi</th>
+                                    <th>Ürün Kategorisi</th>
+                                    <th>Ürün Adeti</th>
+                                    <th>Ürün Fiyatı</th>
+                                    <th>Ürün</th>
+                                    <th>Kategori</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td></td>
+                                        <td>@item.ProductId</td>
+                                        <td> <img src="@item.ImageUrl" class="img-thumbnail" style="width: 90px; height:70px;"></td>
+                                        <td>@item.ProductName</td>
+                                        <td>@item.categories.CategoryName</td>
+                                        <td>@item.ProductStok</td>
+                                        <td>@item.Price</td>
+                                        <td>
+                                            <a href="/Yönetim/Product/Index/" class="btn btn-info">Ürünler</a>
+
+                                        </td>
+                                        <td>
+                                            <a href="/Yönetim/Category/Index/" class="btn btn-primary">Kategoriler</a>
+                                        </td>
+                                    </tr>
+
+                                }
+
+                            </tbody>
+                        </table>
+                         @Html.PagedListPager((IPagedList)Model,page=>Url.Action("Index",new{page}))
+                        <a href="/Home/Index/" class="btn btn-success">Anasayfaya</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

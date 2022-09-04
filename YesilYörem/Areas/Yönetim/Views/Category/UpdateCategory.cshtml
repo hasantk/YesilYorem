@@ -1,0 +1,31 @@
+﻿@model EntityLayer.Concrete.Category
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "UpdateCategory";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row mt-4">
+    <div class="col col-md-4">
+    </div>
+    <div class="col col-md-5">
+        <div class="card z-index-7 ">
+            <div class="card-header pb-0">
+                <h6>Ürün Ekleme sayfası</h6>
+            </div>
+            <div class="card-body p-3 " style="height:550px;">
+                <form asp-controller="Category" asp-action="UpdateCategory" method="post">
+                <div class="chart">
+                 <input type="hidden" asp-for="CategoryId" value="@Model.CategoryId"/>
+                 <input type="text" asp-for="CategoryName"/>
+                 <br>
+                 <input type="text" asp-for="CategoryStatus"/>
+                </div>
+                <button class="btn btn-success">Kaydet</button>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+</div>
+

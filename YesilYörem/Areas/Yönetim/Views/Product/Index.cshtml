@@ -1,14 +1,16 @@
 ﻿@using EntityLayer.Concrete
-@model List<Product>
+@using X.PagedList
+@using X.PagedList.Mvc.Core
+@model IPagedList<EntityLayer.Concrete.Product>
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 <div class="row mt-4">
-    <div class="col col-md-2">
+    <div class="col col-md-0">
     </div>
-    <div class="col col-md-10">
-        <div class="card z-index-7">
+    <div class="col col-md-12">
+        <div class="card z-index-6">
             <div class="card-header pb-0">
                 <h6>Ürün Listesi</h6>
             </div>
@@ -16,7 +18,7 @@
                 <div class="chart">
 
                     <div class="table table-bordered table-hover">
-                        <table style="width: 925px; height:300px;">
+                        <table style="width:1080px; height:300px;">
                             <thead>
                                 <tr>
                                     <th>#</th>
@@ -54,9 +56,8 @@
                                 }
 
                             </tbody>
-
                         </table>
-                        <br />
+                        @Html.PagedListPager((IPagedList)Model,page=>Url.Action("Index",new{page}))
                         <a href="/Yönetim/Product/AddProduct/" class="btn btn-success">Ürün Ekle</a>
                     </div>
 
@@ -64,4 +65,5 @@
             </div>
         </div>
     </div>
+
 </div>

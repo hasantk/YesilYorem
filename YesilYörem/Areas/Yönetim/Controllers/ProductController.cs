@@ -2,11 +2,13 @@
 using DataAccessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using X.PagedList;
 
 namespace YesilYörem.Areas.Yönetim.Controllers
 {
@@ -18,9 +20,9 @@ namespace YesilYörem.Areas.Yönetim.Controllers
         UserManager um = new UserManager(new EfUserRepository());
         Context c = new Context();
 
-        public IActionResult Index()
+        public IActionResult Index(int page=1)
         {
-            var values = pm.GetListWithCategory();
+            var values = pm.GetListWithCategory().ToPagedList(page,5);
             return View(values);
         }
 
@@ -89,14 +91,13 @@ namespace YesilYörem.Areas.Yönetim.Controllers
         }
 
         [HttpPost]
-        public ActionResult UpdateProduct(Product p) 
+        public ActionResult UpdateProduct(Product t) 
         {
-            var productvalue = pm.TGetById(p.ProductId);
-            p.UserId = 1;
-            p.ProductCreateTime= DateTime.Parse(p.ProductCreateTime.ToShortDateString());  
-            p.ProductStatus = true;
-            pm.TUpdate(p);
-            return RedirectToAction("Index");
+            t.UserId = 1;
+            t.ProductCreateTime= DateTime.Parse(t.ProductCreateTime.ToShortDateString());  
+            t.ProductStatus = true;
+            pm.TUpdate(t);
+            return RedirectToAction("Index", "Product");
          
         }
     }

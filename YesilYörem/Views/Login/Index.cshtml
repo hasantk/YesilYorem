@@ -1,8 +1,38 @@
-﻿
+﻿@model EntityLayer.Concrete.Admin
 @{
     ViewData["Title"] = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = null;
 }
 
-<h1>Login Index</h1>
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YeşilYörem</title>
+    <link rel="stylesheet" href="~/tasarım/assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="vh-100">
+        <div class="container-fluid h-custom">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-md-9 col-lg-6 col-xl-5">
+              <img src="~/tasarım/assets/images/YesilYöremlogo.png"
+                class="img-fluid" alt="Sample image">
+            </div>
+            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+              <form method="post">
+                <input type="text" asp-for="AdminUserName" placeholder="Kullanici Adi"  class="form-control"/>
+                <br>
+                <input type="password" asp-for="Password" placeholder="Parola" class="form-control"/>
+                <br>
+                <button class="btn btn-success">Giriş Yap</button>
+      
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+  </body>
+  </html>

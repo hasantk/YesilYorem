@@ -18,10 +18,6 @@ namespace BusinessLayer.Concrete
             _productDal = productDal;
         }
 
-        public List<Product> Getlist()
-        {
-            return _productDal.GetListAll(); 
-        }
 
         public List<Product> GetListWithCategory()
         {
@@ -56,6 +52,16 @@ namespace BusinessLayer.Concrete
         public void TUpdate(Product t)
         {
             _productDal.Update(t);
+        }
+
+        public List<Product> Getlist()
+        {
+            return _productDal.GetListAll();
+        }
+
+        public List<Product> GetListCategory(int id)
+        {
+            return _productDal.GetListAll(x => x.CategoryId == id);
         }
     }
 }

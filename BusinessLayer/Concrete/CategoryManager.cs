@@ -28,6 +28,10 @@ namespace BusinessLayer.Concrete
             return _categoryDal.GetListAll().Take(4).ToList();
         }
 
+        public List<Category> GetCategoryById(int id)
+        {
+            return _categoryDal.GetListAll(x => x.CategoryId == id);
+        }
 
         public void TAdd(Category t)
         {

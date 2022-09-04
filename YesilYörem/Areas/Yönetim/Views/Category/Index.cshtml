@@ -1,0 +1,64 @@
+﻿@using EntityLayer.Concrete
+@using X.PagedList
+@using X.PagedList.Mvc.Core
+@model IPagedList<EntityLayer.Concrete.Category>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row mt-4">
+    <div class="col col-md-2">
+    </div>
+    <div class="col col-md-10">
+        <div class="card z-index-8">
+            <div class="card-header pb-0">
+                <h6>Kategori Listesi</h6>
+            </div>
+            <div class="card-body p-4">
+                <div class="chart">
+
+                    <div class="table table-bordered table-hover">
+                        <table style="width:925px; height:300px;">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Id</th>
+                                    <th>Kategori İsmi</th>
+                                    <th>Kategori Durumu</th>
+                                    <th>Sil</th>
+                                    <th>Düzenle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td></td>
+                                        <td>@item.CategoryId</td>
+                                        <td>@item.CategoryName</td>
+                                        <td>@item.CategoryStatus</td>
+                                        <td>
+                                            <a href="/Yönetim/Category/DeleteCategory/@item.CategoryId" class="btn btn-danger">Sil</a>
+
+                                        </td>
+                                        <td>
+                                            <a href="/Yönetim/Category/UpdateCategory/@item.CategoryId" class="btn btn-primary">Düzenle</a>
+                                        </td>
+                                    </tr>
+
+                                }
+
+                            </tbody>
+                        </table>
+                         @Html.PagedListPager((IPagedList)Model,page=>Url.Action("Index",new{page}))
+                        <a href="/Yönetim/Category/AddCategory/" class="btn btn-success">Kategori Ekle</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
